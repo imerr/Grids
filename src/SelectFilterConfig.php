@@ -14,6 +14,8 @@ class SelectFilterConfig extends FilterConfig
 
     protected $multipleMode = false;
 
+    protected $hideNoneOption = false;
+
     /**
      * Returns option items of html select tag.
      *
@@ -115,4 +117,27 @@ class SelectFilterConfig extends FilterConfig
     {
         return $this->multipleMode;
     }
+    /**
+     * Returns if the "--//--" option with no value is hidden
+     *
+     * @return boolean
+     */
+    public function isNoneOptionHidden()
+    {
+        return $this->hideNoneOption;
+    }
+
+    /**
+     * En/disabled hiding of the "--//--" option with no value
+     *
+     * @param boolean $hideNoneOption
+     * @return $this
+     */
+    public function setHideNoneOption($hideNoneOption)
+    {
+        $this->hideNoneOption = $hideNoneOption;
+        return $this;
+    }
+
+
 }

@@ -11,10 +11,10 @@ if (method_exists($cfg, 'isSubmittedOnChange') && $cfg->isSubmittedOnChange()) {
     class="form-control input-sm"
     name="<?= $filter->getInputName() ?><?= $cfg->isMultipleMode() ? '[]' : '' ?>"
     <?= $onchange ?>
-    <?= ($size = $cfg->getSize()) ? 'size="'.$size.'"' : '' ?>
+    <?= ($size = $cfg->getSize()) ? 'size="' . $size . '"' : '' ?>
     <?= ($cfg->isMultipleMode()) ? 'multiple="multiple"' : '' ?>
-    >
-    <?= (!$cfg->isMultipleMode()) ? '<option value="">--//--</option>' : '' ?>
+>
+    <?= ($cfg->isMultipleMode() || $cfg->isNoneOptionHidden()) ? '' : '<option value="">--//--</option>' ?>
     <?php foreach ($filter->getConfig()->getOptions() as $value => $label): ?>
         <?php
         $maybe_selected = (
