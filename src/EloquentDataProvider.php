@@ -149,6 +149,12 @@ class EloquentDataProvider extends DataProvider
                 }
                 $this->src->whereIn($fieldName, $value);
                 return $this;
+            case 'ft':
+                $this->src
+                    ->select(\DB::raw('*, match('.$fieldName.') against ('.\DB::connection()->getPdo()->quote($value).' in boolean mode) as score'))
+                    ->whereRaw('match('.$fieldName.') against ('.\DB::connection()->getPdo()->quote($value).' in boolean mode)')
+                    ->orderBy('score', 'desc');
+                return $this;
         }
         $this->src->where($fieldName, $operator, $value);
         return $this;
