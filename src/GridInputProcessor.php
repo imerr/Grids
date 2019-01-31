@@ -1,9 +1,9 @@
 <?php
 namespace Nayjest\Grids;
 
-use Input;
-use Request;
-use Form;
+use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\Request;
+use Illuminate\Support\Facades\Form;
 
 /**
  * Class GridInputProcessor

@@ -2,7 +2,7 @@
 
 namespace Nayjest\Grids\Components;
 
-use Event;
+use Illuminate\Support\Facades\Event;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Foundation\Application;
 use Illuminate\Http\Response;

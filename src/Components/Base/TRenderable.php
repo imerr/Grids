@@ -1,7 +1,7 @@
 <?php
 namespace Nayjest\Grids\Components\Base;
 
-use View;
+use Illuminate\Support\Facades\View;
 
 /**
  * Trait TRenderable

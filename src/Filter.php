@@ -1,7 +1,7 @@
 <?php
 namespace Nayjest\Grids;
 
-use View;
+use Illuminate\Support\Facades\View;
 
 class Filter
 {

@@ -1,11 +1,11 @@
 <?php
 namespace Nayjest\Grids;
 
-use Event;
-use Cache;
+use Illuminate\Support\Facades\Event;
+use Illuminate\Support\Facades\Cache;
 use Nayjest\Grids\Components\TFoot;
 use Nayjest\Grids\Components\THead;
-use View;
+use Illuminate\Support\Facades\View;
 
 class Grid
 {

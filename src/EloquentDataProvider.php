@@ -2,7 +2,7 @@
 namespace Nayjest\Grids;
 
 use Illuminate\Database\Eloquent\Builder;
-use Event;
+use Illuminate\Support\Facades\Event;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Collection;
 

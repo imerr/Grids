@@ -2,7 +2,7 @@
 namespace Nayjest\Grids\Components\Laravel5;
 
 use Illuminate\Pagination\Paginator;
-use Input;
+use Illuminate\Support\Facades\Input;
 use Nayjest\Grids\Components\Base\RenderableComponent;
 use Nayjest\Grids\Grid;
 

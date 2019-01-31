@@ -1,9 +1,9 @@
 <?php
 namespace Nayjest\Grids;
 
-use DB;
+use Illuminate\Support\Facades\DB;
 use Doctrine\DBAL\Query\QueryBuilder;
-use Event;
+use Illuminate\Support\Facades\Event;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Collection;
 
