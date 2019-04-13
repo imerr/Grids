@@ -3,7 +3,7 @@ namespace Nayjest\Grids;
 
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Request;
-use Illuminate\Support\Facades\Form;
+use Collective\Html\FormFacade as Form;
 
 /**
  * Class GridInputProcessor
